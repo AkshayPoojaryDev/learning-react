@@ -3,16 +3,22 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
     return (
-        <nav>
-            <ul>
+        <nav className="bg-gradient-to-r from-purple-600 to-blue-600 shadow-lg">
+            <ul className="flex gap-6 p-4 max-w-6xl mx-auto">
                 <li>
-                    <Link to="/">Home</Link>
+                    <Link to="/" className="text-white hover:text-purple-200 font-semibold transition-colors">
+                        Home
+                    </Link>
                 </li>
                 <li>
-                    <Link to="/about">About</Link>
+                    <Link to="/about" className="text-white hover:text-purple-200 font-semibold transition-colors">
+                        About
+                    </Link>
                 </li>
                 <li>
-                    <Link to="/contact">Contact</Link>
+                    <Link to="/contact" className="text-white hover:text-purple-200 font-semibold transition-colors">
+                        Contact
+                    </Link>
                 </li>
             </ul>
         </nav>
